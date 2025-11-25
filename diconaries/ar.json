@@ -1,0 +1,18 @@
+{
+  "search": "بحث",
+  "appName": "شركة ليالي القاهرة",
+  "login": "نسجيل الدخول" ,
+  "followMyRegistration": "متابعة حجزي",
+  "learnMore": "تعرف على المزيد",
+  "trip": "رحلة",
+  "requestRide": "اطلب الكابتن",
+  "requestNow": "اطلب الان",
+  "discoverAllOffers": "استكشف جميع العروض",
+  "ourDrivers": "تعرف علي كباتننا",
+  "menu": {
+    "about": "عن شركة ليالي القاهرة",
+    "services": "الخدمات",
+    "companyDrivers": "كباتن الشركة",
+    "travelsAndFeatures": "رحلات وعروض"
+  }
+}

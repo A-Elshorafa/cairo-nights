@@ -1,0 +1,18 @@
+{
+  "trip": "trip",
+  "login": "Login",
+  "search": "Search",
+  "appName": "Cairo Nights",
+  "learnMore": "Learn More",
+  "requestNow": "Request Now",
+  "ourDrivers": "Our Drivers",
+  "requestRide": "Request A Ride",
+  "discoverAllOffers": "Discover All Offers",
+  "followMyRegistration": "Follow My Registration",
+  "menu": {
+    "about": "About",
+    "services": "Services",
+    "companyDrivers": "Company Captins",
+    "travelsAndFeatures": "Travels And Offers"
+  }
+}
