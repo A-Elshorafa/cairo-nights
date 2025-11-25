@@ -71,7 +71,6 @@ export function HeaderMenu({
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "إغلاق القائمة" : "فتح القائمة"}
           className="text-foreground"
-          isSelected={isMenuOpen}
         />
         <NavbarBrand>
           <Logo />

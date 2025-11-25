@@ -50,16 +50,26 @@ export function middleware(request: NextRequest) {
 
   // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
-    const locale = getLocale(request);
+    // Always use default locale (ar) for initial redirect
+    const locale = i18n.defaultLocale;
 
     // e.g. incoming request is /products
-    // The new URL is now /en-US/products
+    // The new URL is now /ar/products
     return NextResponse.redirect(
       new URL(
-        `/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,
+        `/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname === ''? '/about' : pathname }`,
         request.url,
       ),
     );
+  }
+
+  // Rewrite root path (/{locale}/ or /{locale}) to about page
+  for (const locale of i18n.locales) {
+    if (pathname === `/${locale}` || pathname === `/${locale}/`) {
+      const url = request.nextUrl.clone();
+      url.pathname = `/${locale}/about`;
+      return NextResponse.rewrite(url);
+    }
   }
 }
 
